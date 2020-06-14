@@ -28,6 +28,15 @@ gem 'font-awesome-sass', '~> 5.4.1'
 gem 'carrierwave'
 gem 'mini_magick'
 
+# jquery
+gem 'jquery-rails'
+
+# AWSのS3画像アップロード
+gem 'fog-aws'
+
+# 環境変数呼び出し
+gem 'dotenv-rails'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

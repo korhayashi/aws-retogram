@@ -2,7 +2,7 @@
 
 <div class="container">
   <div class="form_container">
-    <%= form_with(model: @user, local: true) do |f| %>
+    <%= form_with(model: @user, local: true, html: {id: 'edit-form'}) do |f| %>
       <div id="error_explanation">
         <ul>
           <% @user.errors.full_messages.each do |msg| %>
@@ -31,7 +31,7 @@
           <%= '名前' %>
         </div>
         <div class="user_edit_name grid_right">
-          <%= f.text_field :name %>
+          <%= f.text_field :name, id: 'edit_name' %>
         </div>
 
         <div class="user_edit_username_area position_right">
