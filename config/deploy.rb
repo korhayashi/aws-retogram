@@ -6,7 +6,7 @@ set :application, 'retogram'
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/dillydally1015/aws-retogram'
 # deployするブランチ。デフォルトはmasterなのでなくても可。
-set :branch, ENV['BRANCH'] || 'master'
+set :branch, ENV['BRANCH'] || 'aws'
 # deploy先のディレクトリ。
 set :deploy_to, '/var/www/retogram'
 # シンボリックリンクをはるフォルダ・ファイル
