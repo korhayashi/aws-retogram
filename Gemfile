@@ -38,12 +38,12 @@ gem 'fog-aws'
 gem 'dotenv-rails'
 
 gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
-gem 'unicorn' # アプリケーションサーバのunicorn
+gem 'unicorn', "~> 5.4" # アプリケーションサーバのunicorn
 gem 'mini_racer', platforms: :ruby # デプロイ時に必要
 
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
-gem 'sassc'
+gem 'sassc', "~> 2.2.1"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
